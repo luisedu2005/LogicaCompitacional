@@ -1,0 +1,90 @@
+CODIGO 1
+import javax.swing.JOptionPane;
+
+class Main {
+    String nome;
+    int anoDeNasc;
+    int anoAtual;
+  public static void main(String[] args) {
+    Main m = new Main();
+    m.id();
+  }
+public void id (){
+nome = JOptionPane.showInputDialog("digite seu nome");
+anoDeNasc = Integer.parseInt(JOptionPane.showInputDialog("digite seu ano e nascimento"));
+anoAtual = Integer.parseInt(JOptionPane.showInputDialog("o ano atual"));
+int idade = anoAtual - anoDeNasc;
+nome = nome+" sua idade é "+idade;
+JOptionPane.showMessageDialog(null, nome);
+}
+}
+
+
+
+
+CODIGO 2
+
+import javax.swing.JOptionPane;
+
+class Main {
+  public static void main(String[] args) {
+    int totalpassos = Integer.parseInt(JOptionPane.showInputDialog(null, "quantos passos faltam"));
+    int passos = 0;
+    while(passos < totalpassos){
+      passos++;
+      JOptionPane.showMessageDialog(null, "você deu "+passos+" passos");
+    }
+    if (passos == totalpassos){
+      JOptionPane.showMessageDialog(null, "Você chegou no final");
+    }
+  }
+}
+
+
+
+
+
+
+CODIGO 3 
+public class Main
+{
+	public static void main(String[] args) { 
+	    int x = 0;
+	    int y = 0;
+	    while(x<100){
+	        if(x % 7 == 0){
+	            y++;
+	        }
+	        x++;
+	    }
+	    
+		System.out.println(x);
+		System.out.println(y);
+	}
+}
+
+4 public class Main
+{
+	public static void main(String[] args) {
+     int n1 = 4;
+     int n2 = 8;
+     int n3 = 9;
+     System.out.println(n1+", "+n2+", "+n3);
+     int media = (n1+n2+n3)/3;
+        if (media < 4){
+         System.out.println("E");
+        }
+          if (media < 6){
+           System.out.println("D");
+          }
+        if (media < 7.5){
+         System.out.println("C");
+        }
+        if(media < 9){
+         System.out.println("B");
+        }
+        if (media > 9){
+              System.out.println("A");
+        }
+	}
+}
